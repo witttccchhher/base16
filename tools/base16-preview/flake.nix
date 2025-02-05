@@ -7,7 +7,9 @@
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
-    packages.x86_64-linux.base16-preview = pkgs.callPackage ./default.nix { };
-    packages.x86_64-linux.default = self.packages.x86_64-linux.base16-preview;
+    packages.${system} = {
+      base16-preview = pkgs.callPackage ./default.nix { };
+      default = self.packages.${system}.base16-preview;
+    };
   };
 }

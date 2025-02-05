@@ -7,7 +7,9 @@
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
-    packages.x86_64-linux.readme-gen = pkgs.callPackage ./default.nix { };
-    packages.x86_64-linux.default = self.packages.x86_64-linux.readme-gen;
+    packages.${system} = {
+      readme-gen = pkgs.callPackage ./default.nix { };
+      default = self.packages.${system}.readme-gen;
+    };
   };
 }
