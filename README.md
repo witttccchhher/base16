@@ -3,6 +3,9 @@
 ## [neo-gen](./colorschemes/neo-gen.yaml)
 ![neo-gen preview](./previews/neo-gen.svg)
 
+## [next](./colorschemes/next.yaml)
+![next](./previews/next.svg)
+
 ## [oldworld](./colorschemes/oldworld.yaml)
 ![oldworld preview](./previews/oldworld.svg)
 
@@ -20,4 +23,3 @@
 
 ## [nightlamp](./colorschemes/nightlamp.yaml)
 ![nightlamp preview](./previews/nightlamp.svg)
-
